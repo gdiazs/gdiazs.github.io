@@ -9,8 +9,8 @@ body{
 }
 
 #main-list{
-	margin-top: 23%;
 	list-style-type: none;
+	padding-top: 10px;
 }
 
 #main-list li{
