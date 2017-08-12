@@ -1,9 +1,10 @@
 body{
-	background-color: #34495e;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 #main-menu{
-    background-color: #3498db;
+    background-color: #634f4b;
     height: 100vh;
    
 }
@@ -15,13 +16,13 @@ body{
 
 #main-list li{
 	margin-bottom: 20px;
-	background-color: #3498db;
-	border: solid 1px  #2980b9;
 	text-align: center;
+	height: 50%;
 }
 
 #main-list li:hover{
-	background-color: #2980b9;
+	background-color: #987b75;
+	border-radius: 3px;
 }
 
 #main-list li a{
@@ -58,7 +59,7 @@ body{
 }
 
 .main-icon{
-	font-size: 60px;
+	font-size: 30px;
 	vertical-align: middle;
 	display: block;
 }
@@ -67,6 +68,10 @@ body{
 	vertical-align: middle;
 	margin-right: 14px;
 	margin-left: 3px;
+}
+
+.image-icon{
+	height: 30px;
 }
 
 
