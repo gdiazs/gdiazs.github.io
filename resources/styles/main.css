@@ -1,0 +1,21 @@
+body{
+	background-color: #BDBDBD;
+}
+
+.photo{
+	padding: 5px;
+	text-align: center;
+}
+
+.profile-section{
+
+
+}
+
+#photo-profile{
+	border-radius: 100%;
+	max-width: 50%;
+	box-sizing: border-box;
+	border:  .3em solid #705934;
+}
+

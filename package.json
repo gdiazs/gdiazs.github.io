@@ -1,0 +1,19 @@
+{
+  "name": "gdiazs.github.io",
+  "version": "1.0.0",
+  "description": "Resume Online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdiazs/gdiazs.github.io.git"
+  },
+  "author": "gdiazs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdiazs/gdiazs.github.io/issues"
+  },
+  "homepage": "https://github.com/gdiazs/gdiazs.github.io#readme"
+}
