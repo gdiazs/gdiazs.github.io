@@ -46,6 +46,7 @@ body{
 	padding: 0;
 	height: 2em;
 	cursor: pointer;
+	padding-top: 1em;
 }
 
 .tabs ul .active{

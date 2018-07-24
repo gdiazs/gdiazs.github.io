@@ -1,7 +1,5 @@
 var main = (function($, commonServices){
     
-    console.log(commonServices);
-
     function changeTabConent(idTabType){
         var content = $("#tab-content");
 
