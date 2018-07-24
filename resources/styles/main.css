@@ -1,14 +1,23 @@
 body{
 	background-color: #BDBDBD;
+	
 }
 
 .photo{
-	padding: 5px;
+	color: white;
 	text-align: center;
+	font-family: 'Satisfy', cursive;
+	
+}
+
+.photo h1{
+	font-size: 1.5em;
+	
 }
 
 .profile-section{
-
+	background-color: #424242;
+	padding: 0;
 
 }
 
@@ -16,6 +25,48 @@ body{
 	border-radius: 100%;
 	max-width: 50%;
 	box-sizing: border-box;
-	border:  .3em solid #705934;
+	width: 40%;
+	height: auto;
 }
 
+
+.tabs ul {
+	background-color: #424242;
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;	
+}
+.tabs ul li{
+	display: inline-block;
+	flex-grow: 4;
+	text-align: center;
+	color: white;
+	margin: 0;
+	padding: 0;
+	height: 2em;
+	cursor: pointer;
+}
+
+.tabs ul .active{
+	border-bottom: 3px solid white;
+}
+
+
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
