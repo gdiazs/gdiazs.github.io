@@ -45,7 +45,9 @@ body{
 	margin: 0;
 	height: 3em;
 	cursor: pointer;
-	padding-top: .5em;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 
 }
 
