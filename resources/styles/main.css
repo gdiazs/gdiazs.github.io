@@ -36,6 +36,7 @@ body{
 	display: flex;
 	margin: 0;
 	padding: 0;	
+	z-index: 1;
 }
 .tabs ul li{
 	display: inline-block;
@@ -53,6 +54,12 @@ body{
 
 .tabs ul .active{
 	border-bottom: 3px solid white;
+}
+
+.fixed {
+  position: fixed;
+  top:0;
+  width: 100%; 
 }
 
 

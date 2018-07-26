@@ -17,6 +17,13 @@ var main = (function($, commonServices){
         changeTabConent(event.target.id);
     }
 
+    function addStyleOnScrollTop(scrollCount){
+        if (scrollCount > 100){
+            $("#main-menu").addClass("fixed");
+        }else{
+            $("#main-menu").removeClass("fixed");
+        }
+    }
 
 
     return {
@@ -25,6 +32,13 @@ var main = (function($, commonServices){
 
            //set selected first btn
            $("#about").click();
+
+           //On scroll top
+           $(window).scroll(function (){
+
+                addStyleOnScrollTop($(window).scrollTop());
+           });
+           
         },
     }
 
