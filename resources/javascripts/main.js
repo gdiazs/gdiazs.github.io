@@ -7,6 +7,16 @@ var main = (function($, commonServices){
             content.html(result)
         });
 
+        if ($("#main-menu").hasClass("fixed")){
+          var scrollPos =  $(".content-data").offset();
+          if(scrollPos){
+            $(window).scrollTop(scrollPos.top - 15);  
+          }
+        }
+
+        
+
+
       
     }
 
@@ -38,6 +48,8 @@ var main = (function($, commonServices){
 
                 addStyleOnScrollTop($(window).scrollTop());
            });
+
+
            
         },
     }

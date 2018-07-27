@@ -70,6 +70,10 @@ body{
   width: 100%; 
 }
 
+.content-data{
+	padding-top: 2em;
+}
+
 
 
 /* Mobile first queries */
