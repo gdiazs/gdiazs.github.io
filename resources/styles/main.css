@@ -3,6 +3,13 @@ body{
 	
 }
 
+.container-full{
+	width: 100%;
+	max-width: 100%;
+	clear: both;
+	margin: 0 auto;
+}
+
 .photo{
 	color: white;
 	text-align: center;
@@ -59,6 +66,7 @@ body{
 .fixed {
   position: fixed;
   top:0;
+  left: 0;
   width: 100%; 
 }
 
@@ -76,7 +84,36 @@ body{
 @media (min-width: 750px) {}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+	#photo-profile{
+		width: 10%;
+	}
+
+	.tabs {
+		width: 100%;
+		background-color: #424242;
+	}
+
+	.tabs ul {
+		width: 40%;
+		margin: 0 auto;
+	}
+
+	.tabs ul li:hover{
+		background-color: #646566;
+		border-bottom: 3px solid #646566;
+
+	}
+	.fixed {
+  		position: relative;
+
+  		width: 100%; 
+	}
+
+
+
+}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
