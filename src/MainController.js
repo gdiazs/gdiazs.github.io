@@ -1,4 +1,7 @@
-var main = (function($, commonServices){
+import $ from 'jquery';
+import commonServices from './CommonServices';
+
+function mainController (){
     
     function changeTabConent(idTabType){
         var content = $("#tab-content");
@@ -13,11 +16,7 @@ var main = (function($, commonServices){
             $(window).scrollTop(scrollPos.top - 15);  
           }
         }
-
-        
-
-
-      
+     
     }
 
 
@@ -55,4 +54,7 @@ var main = (function($, commonServices){
     }
 
 
-})($, commonServices);
+}
+
+export default mainController();
+    
