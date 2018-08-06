@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import commonServices from './CommonServices';
 
+var SCROLL_TOP_COUNT = 190;
+
 function mainController (){
     
     function changeTabConent(idTabType){
@@ -13,7 +15,7 @@ function mainController (){
         if ($("#main-menu").hasClass("fixed")){
           var scrollPos =  $(".content-data").offset();
           if(scrollPos){
-            $(window).scrollTop(scrollPos.top - 15);  
+            $(window).scrollTop(SCROLL_TOP_COUNT);  
           }
         }
      
@@ -27,7 +29,8 @@ function mainController (){
     }
 
     function addStyleOnScrollTop(scrollCount){
-        if (scrollCount > 100){
+        console.log(scrollCount)
+        if (scrollCount >= SCROLL_TOP_COUNT){
             $("#main-menu").addClass("fixed");
         }else{
             $("#main-menu").removeClass("fixed");
