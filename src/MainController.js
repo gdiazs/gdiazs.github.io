@@ -8,8 +8,10 @@ function mainController (){
     function changeTabConent(idTabType){
         var content = $("#tab-content");
 
+
         commonServices.fetchDataHtml(idTabType, function(result){
             content.html(result)
+            afterRenderView()
         });
 
         if ($("#main-menu").hasClass("fixed")){
@@ -25,6 +27,7 @@ function mainController (){
     function changeTabEvent(event){
         $(".tabs li").removeClass("active");
         $(event.target).addClass("active");
+        
         changeTabConent(event.target.id);
     }
 
@@ -37,9 +40,31 @@ function mainController (){
         }
     }
 
+    function afterRenderView(){
+      changeAge();
+      changeExperienceYears();
+    }
+
+    /**
+     * Just updates the age
+     */
+    function changeAge(){
+      let ageMiliseconds = new Date().getTime() - new Date("1989-06-24").getTime();
+      $("#age").text(new Date(ageMiliseconds).getFullYear() - 1970);
+    }
+
+
+    function changeExperienceYears(){
+      let experienceAge = new Date().getTime() - new Date("2013-10-01").getTime();
+      $("#experience").text(new Date(experienceAge).getFullYear() - 1970);
+    }
+
 
     return {
         init: function(){
+
+          
+
            $(".tabs li").click(changeTabEvent);
 
            //set selected first btn
@@ -50,6 +75,8 @@ function mainController (){
 
                 addStyleOnScrollTop($(window).scrollTop());
            });
+
+
 
 
            
