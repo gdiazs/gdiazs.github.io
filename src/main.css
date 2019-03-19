@@ -1,5 +1,5 @@
 body{
-	background-color: #BDBDBD;
+	background-color: white;
 	
 }
 
@@ -18,11 +18,10 @@ body{
 
 .photo h1{
 	font-size: 1.5em;
-	
 }
 
 .profile-section{
-	background-color: #424242;
+	background-color: #10537e;
 	padding: 0;
 	
 
@@ -34,16 +33,18 @@ body{
 	box-sizing: border-box;
 	width: 40%;
 	height: auto;
+	margin-top: 2em;
 }
 
 
 .tabs ul {
-	background-color: #424242;
+	background-color: #10537e;
 	list-style: none;
 	display: flex;
 	margin: 0;
 	padding: 0;	
 	z-index: 1;
+	box-shadow: 0px 8px 5px -4px rgba(0,0,0,0.17);
 }
 .tabs ul li{
 	display: inline-block;
@@ -74,12 +75,22 @@ body{
 	padding-top: .5em;
 }
 
+.entry{
+	padding: 1.3em;
+	border-top: solid 1px lightgray;
+	font-size: 1.2em;
+
+}
+
+
 
 
 /* Mobile first queries */
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+
+}
 
 /* Larger than phablet */
 @media (min-width: 550px) {}
@@ -95,7 +106,7 @@ body{
 
 	.tabs {
 		width: 100%;
-		background-color: #424242;
+		background-color: #10537e;
 	}
 
 	.tabs ul {
@@ -112,6 +123,12 @@ body{
   		position: relative;
 
   		width: 100%; 
+	}
+	.entry{
+
+		padding: 1.3em;
+		border-top: solid 1px lightgray;
+
 	}
 
 
